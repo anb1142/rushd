@@ -1,0 +1,94 @@
+@import "./classes/abs.scss";
+
+main > section:first-child {
+	height: 93.3vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	position: relative;
+	background: #e0dcb469;
+
+	> img {
+		height: 80vh;
+		width: 50vh;
+		max-width:50vw;
+		padding: 0 3vw;
+		object-fit: contain;
+
+	}
+	> div {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		font-family: "El Messiri";
+		width: 70vw;
+		h1,
+		p {
+			padding-right: 2vh;
+		}
+		> h1 {
+			font-size: 4vh;
+
+		}
+		> p {
+			font-size: 3vh;
+
+		}
+		> article {
+			height: 6vh;
+			display: flex;
+			flex-wrap: wrap;
+			margin-top: 1vh;
+			> a {
+				width: 18vh;
+				&:first-child {
+					margin-right: 1vh;
+				}
+			}
+		}
+	}
+	> video {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		z-index: -1;
+		@extend .abs;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	main > section:first-child {
+		height: calc(100vh - 12vw);
+		flex-direction: column;
+		justify-content: space-evenly;
+		> img {
+			height: 50vh;
+			width: 100vw;
+			padding: 2vw 0;
+		}
+		> div {
+			width: 95%;
+			text-align: center;
+			h1,
+			p {
+				padding-right: 0;
+			}
+			> h1 {
+				font-size: 3vh;
+			}
+			> p {
+				font-size: 2.5vh;
+			}
+			> article {
+				margin-top: 1vw;
+				justify-content: space-evenly;
+				> a {
+					&:first-child {
+						margin-right: 0;
+					}
+				}
+			}
+		}
+	}
+}

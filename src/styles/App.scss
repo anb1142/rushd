@@ -1,0 +1,56 @@
+@import "./_vars.scss";
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+img {
+	-webkit-user-drag: none;
+}
+
+h1,
+h2,
+p {
+	cursor: default;
+}
+
+li {
+	list-style: none;
+}
+main {
+	transform: translateY(6.7vh);
+}
+
+::-webkit-scrollbar {
+	width: 1vh;
+	background: #101010;
+}
+
+::-webkit-scrollbar-track {
+	display: none;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #e0dcb4;
+}
+
+aside {
+	height: 15vh;
+	width: 100%;
+	transform: rotate(180deg);
+	background: #fff;
+	box-sizing: content-box;
+	overflow: hidden;
+	> svg {
+		margin-top: -0.1vh;
+	}
+}
+@media screen and (max-width: 768px) {
+	main {
+		transform: none;
+	}
+	aside {
+		height: 18vw;
+	}
+}

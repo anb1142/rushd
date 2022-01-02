@@ -1,0 +1,91 @@
+@import "./_vars.scss";
+
+main > section:nth-child(3) {
+	background: $bg;
+	font-family: "El Messiri";
+	padding-bottom: 3vh;
+	> h1 {
+		font-size: 4vh;
+		text-align: center;
+	}
+	> section {
+		display: flex;
+		align-items: center;
+		justify-content: space-evenly;
+		flex-wrap: wrap;
+		padding: 0 7vh;
+
+		> article {
+			height: 40vh;
+			width: 60vh;
+			padding: 4vh 6vh;
+			margin: 3vh 1vh;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-evenly;
+
+			background: #e7e7ef;
+			box-shadow: 0 1vh 3vh #ddd, inset 0 0vh 2vh #ddd;
+			border: 0.1vh solid #ddd;
+			border-radius: 2vh;
+			> div {
+				display: flex;
+				color: $accent;
+				> span {
+					font-size: 10vh;
+					width: 30%;
+				}
+				> h1 {
+					width: 70%;
+					font-size: 3.5vh;
+					display: flex;
+					align-items: center;
+					justify-content: right;
+				}
+			}
+			> p {
+				font-size: 2.5vh;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	main > section:nth-child(3) {
+		> h1 {
+			font-size: 4vh;
+		}
+		> section {
+			padding: 0;
+
+			> article {
+				min-height: 40vh;
+				height: initial;
+				width: 85vw;
+				padding: 4vw 6vw;
+				margin: 4vw 0;
+
+				border-width: 0.2vw;
+				border-radius: 4vw;
+				> div {
+					flex-direction: column;
+					> span {
+						font-size: 20vw;
+						width: 100%;
+						text-align: center;
+					}
+					> h1 {
+						width: 100%;
+						font-size: 7vw;
+						justify-content: center;
+						margin-bottom: 1vh;
+					}
+				}
+				> p {
+					font-size: 5vw;
+					text-align: center;
+				}
+			}
+		}
+	}
+}

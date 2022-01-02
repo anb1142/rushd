@@ -1,0 +1,54 @@
+@import "./_vars.scss";
+@import "./classes/abs.scss";
+
+main > footer {
+	background: $bg2;
+	color: $accent;
+	font-family: "Source Sans Pro";
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0 0 3vh;
+
+	> aside {
+		background: $bg2;
+		transform: none;
+	}
+	> div {
+		width: 60vh;
+		font-size: 5vh;
+		display: flex;
+		justify-content: space-evenly;
+		padding: 1vh;
+		position: relative;
+		&::before {
+			@extend .abs;
+			content: "";
+			background: #aaa;
+			top: 98%;
+			border-radius: 50%;
+		}
+		> a {
+			color: inherit;
+		}
+	}
+	> p {
+		font-size: 2.7vh;
+		padding: 1vh;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	main > footer {
+		padding: 0 0 14vw;
+		> div {
+			width: 90vw;
+			font-size: 7vw;
+			padding: 2vw;
+		}
+		> p {
+			font-size: 5vw;
+			padding: 2vw;
+		}
+	}
+}
