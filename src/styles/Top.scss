@@ -59,7 +59,7 @@ main > section:first-child {
 
 @media screen and (max-width: 768px) {
 	main > section:first-child {
-		height: calc(100vh - 12vw);
+		height: calc(100vh - 20vw);
 		flex-direction: column;
 		justify-content: space-evenly;
 		> img {

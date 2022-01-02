@@ -44,6 +44,9 @@ aside {
 	}
 }
 @media screen and (max-width: 768px) {
+	*{
+		user-select: none;
+	}
 	main {
 		transform: none;
 	}
