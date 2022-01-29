@@ -20,7 +20,7 @@ main > section:nth-child(2) {
 		justify-content: space-evenly;
 		flex-wrap: wrap;
 		> article {
-			width: 35vh;
+			width: 33vh;
 			height: 50vh;
 			position: relative;
 			border-radius: 1vh;
@@ -72,6 +72,12 @@ main > section:nth-child(2) {
 				}
 			}
 		}
+	}
+}
+@media screen and (device-aspect-ratio: 16/10) {
+	main > section:nth-child(2) > section > article {
+		width: 30vh;
+		height: 45vh;
 	}
 }
 

@@ -49,7 +49,11 @@ main > section:nth-child(3) {
 		}
 	}
 }
-
+@media screen and (device-aspect-ratio: 21/9) {
+	main > section:nth-child(3) > section {
+		padding: 0 30vh;
+	}
+}
 @media screen and (max-width: 768px) {
 	main > section:nth-child(3) {
 		> h1 {

@@ -51,6 +51,12 @@ nav {
 	}
 }
 
+@media screen and (device-aspect-ratio: 21/9) {
+	nav {
+		padding: 0 10vh;
+	}
+}
+
 @media screen and (max-width: 768px) {
 	nav {
 		height: 0;
