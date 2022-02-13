@@ -1,4 +1,5 @@
 @import "./classes/abs.scss";
+@import "./_vars.scss";
 
 main > section:nth-child(2) {
 	display: flex;
@@ -6,6 +7,8 @@ main > section:nth-child(2) {
 	padding: 6vh 0 7vh;
 	text-align: center;
 	font-family: "El Messiri";
+	background: #fff;
+	color: #000;
 
 	> h1 {
 		font-size: 4vh;
@@ -19,6 +22,7 @@ main > section:nth-child(2) {
 		display: flex;
 		justify-content: space-evenly;
 		flex-wrap: wrap;
+		z-index: 1;
 		> article {
 			width: 33vh;
 			height: 50vh;
